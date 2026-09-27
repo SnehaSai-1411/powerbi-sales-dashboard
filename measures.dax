@@ -1,0 +1,43 @@
+// StyleHub DAX measures — paste into Power BI via
+// Modeling tab > New measure (one at a time)
+
+// ---------- Core revenue & profit ----------
+// Revenue is calculated, not stored: Quantity x Price x (1 - Discount)
+Total Revenue =
+SUMX (
+    sales,
+    sales[Quantity] * RELATED ( products[UnitPrice] ) * ( 1 - sales[Discount] )
+)
+
+Total Cost =
+SUMX (
+    sales,
+    sales[Quantity] * RELATED ( products[UnitCost] )
+)
+
+Total Profit = [Total Revenue] - [Total Cost]
+
+Profit Margin = DIVIDE ( [Total Profit], [Total Revenue] )
+
+// ---------- Orders & baskets ----------
+Total Orders = DISTINCTCOUNT ( sales[OrderID] )
+
+Total Units = SUM ( sales[Quantity] )
+
+Avg Order Value = DIVIDE ( [Total Revenue], [Total Orders] )
+
+// ---------- Time intelligence (needs the dates table) ----------
+Revenue LY =
+CALCULATE (
+    [Total Revenue],
+    SAMEPERIODLASTYEAR ( dates[Date] )
+)
+
+Revenue YoY % = DIVIDE ( [Total Revenue] - [Revenue LY], [Revenue LY] )
+
+Revenue YTD = TOTALYTD ( [Total Revenue], dates[Date] )
+
+Profit YTD = TOTALYTD ( [Total Profit], dates[Date] )
+
+// ---------- Customer ----------
+Revenue per Customer = DIVIDE ( [Total Revenue], DISTINCTCOUNT ( sales[CustomerID] ) )

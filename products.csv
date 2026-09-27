@@ -1,0 +1,41 @@
+ProductID,ProductName,Category,UnitPrice,UnitCost
+P-001,Maxi Dress,Dresses,89,36.91
+P-002,Wrap Dress,Dresses,79,30.03
+P-003,Shift Dress,Dresses,69,33.13
+P-004,Sundress,Dresses,55,20.05
+P-005,Evening Gown,Dresses,189,86.41
+P-006,Midi Dress,Dresses,75,31.74
+P-007,Shirt Dress,Dresses,65,23.5
+P-008,Slip Dress,Dresses,59,26.64
+P-009,Silk Blouse,Blouses,85,30.39
+P-010,Cotton Shirt,Blouses,45,19.65
+P-011,Peplum Top,Blouses,52,18.93
+P-012,Off-Shoulder Top,Blouses,48,17.67
+P-013,Tunic,Blouses,42,18.27
+P-014,Henley,Blouses,38,19.58
+P-015,Flannel Shirt,Blouses,49,18.36
+P-016,Linen Blouse,Blouses,58,22.89
+P-017,Skinny Jeans,Pants,79,37.56
+P-018,Wide-Leg Pants,Pants,72,38.85
+P-019,Chinos,Pants,59,27.46
+P-020,Joggers,Pants,45,19.32
+P-021,Palazzo Pants,Pants,68,37.08
+P-022,Cargo Pants,Pants,62,22.28
+P-023,Trousers,Pants,74,38.61
+P-024,Leggings,Pants,39,15.91
+P-025,Crew Sweater,Knits,69,26.14
+P-026,Cardigan,Knits,75,28.02
+P-027,Turtleneck,Knits,59,24.29
+P-028,Hoodie,Knits,55,28.23
+P-029,Pullover,Knits,64,24.71
+P-030,Knit Dress,Knits,82,38.24
+P-031,Sweater Vest,Knits,48,22.93
+P-032,Poncho,Knits,66,28.02
+P-033,Denim Jacket,Jackets,99,45.5
+P-034,Blazer,Jackets,129,46.77
+P-035,Bomber Jacket,Jackets,109,39.45
+P-036,Puffer Coat,Jackets,159,62.2
+P-037,Trench Coat,Jackets,149,72.43
+P-038,Leather Jacket,Jackets,219,95.38
+P-039,Windbreaker,Jackets,79,32.61
+P-040,Parka,Jackets,169,78.94
